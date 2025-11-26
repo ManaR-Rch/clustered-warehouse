@@ -24,6 +24,8 @@ public class Deal {
 
     private String reference;
 
+    private String dealUniqueId;
+
     public Deal() {
     }
 
@@ -32,6 +34,14 @@ public class Deal {
         this.currency = currency;
         this.counterparty = counterparty;
         this.reference = reference;
+    }
+
+    public Deal(BigDecimal amount, String currency, String counterparty, String reference, String dealUniqueId) {
+        this.amount = amount;
+        this.currency = currency;
+        this.counterparty = counterparty;
+        this.reference = reference;
+        this.dealUniqueId = dealUniqueId;
     }
 
     public Long getId() {
@@ -72,5 +82,13 @@ public class Deal {
 
     public void setReference(String reference) {
         this.reference = reference;
+    }
+
+    public String getDealUniqueId() {
+        return dealUniqueId;
+    }
+
+    public void setDealUniqueId(String dealUniqueId) {
+        this.dealUniqueId = dealUniqueId;
     }
 }

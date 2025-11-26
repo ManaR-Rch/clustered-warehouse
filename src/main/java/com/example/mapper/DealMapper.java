@@ -13,7 +13,8 @@ public final class DealMapper {
                 dto.getAmount(),
                 dto.getCurrency(),
                 dto.getCounterparty(),
-                dto.getReference()
+                dto.getReference(),
+                dto.getDealUniqueId()
         );
     }
 }

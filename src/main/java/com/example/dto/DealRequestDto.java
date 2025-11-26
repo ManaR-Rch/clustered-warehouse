@@ -23,6 +23,9 @@ public class DealRequestDto {
     @NotBlank
     private String reference;
 
+    @NotBlank
+    private String dealUniqueId;
+
     public DealRequestDto() {
     }
 
@@ -31,6 +34,14 @@ public class DealRequestDto {
         this.currency = currency;
         this.counterparty = counterparty;
         this.reference = reference;
+    }
+
+    public DealRequestDto(BigDecimal amount, String currency, String counterparty, String reference, String dealUniqueId) {
+        this.amount = amount;
+        this.currency = currency;
+        this.counterparty = counterparty;
+        this.reference = reference;
+        this.dealUniqueId = dealUniqueId;
     }
 
     public BigDecimal getAmount() {
@@ -63,5 +74,13 @@ public class DealRequestDto {
 
     public void setReference(String reference) {
         this.reference = reference;
+    }
+
+    public String getDealUniqueId() {
+        return dealUniqueId;
+    }
+
+    public void setDealUniqueId(String dealUniqueId) {
+        this.dealUniqueId = dealUniqueId;
     }
 }
