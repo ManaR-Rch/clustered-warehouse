@@ -1,0 +1,24 @@
+# compiled class files
+**/target/
+
+# maven
+/.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# IDEA
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# macOS
+.DS_Store
+
+# logs
+*.log
+
+# Spring Boot specific
+.springBeans
